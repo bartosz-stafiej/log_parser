@@ -51,6 +51,16 @@ The output will display:
 - The list of webpages with the most page views.
 - The list of webpages with the most unique page views.
 
+## How the Script Works
+
+When running the script, several validations are performed on the log file to ensure proper functionality:
+
+1. **File Existence**: The script checks if the provided file exists. If the file is not found, an error message will be displayed.
+2. **File Size**: The file must not exceed 1 GB. If the file is larger than 1 GB, the script will terminate and display an appropriate error message.
+3. **Non-Empty File**: The file must not be empty. If an empty file is provided, an error message will be shown, and the script will not proceed.
+
+If all validations pass, the script proceeds to parse the log file, extract the necessary data, and display the lists of pages with the most views and unique views.
+
 ## Running Tests
 This project follows Test-Driven Development (TDD) principles, and the solution is thoroughly tested. To run the tests, use:
 
